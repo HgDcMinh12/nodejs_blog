@@ -1,8 +1,8 @@
-module.exports = { 
-    multipleMongooseToObject: function(mongooses) {
-        return mongooses.map(mongooses => mongooses.toObject())
+module.exports = {
+    multipleMongooseToObject: function (mongooses) {
+        return mongooses.map((mongooses) => mongooses.toObject());
     },
-    mongooseToObject: function(mongoose) {
+    mongooseToObject: function (mongoose) {
         return mongoose ? mongoose.toObject() : mongoose;
-    }
-}
+    },
+};
