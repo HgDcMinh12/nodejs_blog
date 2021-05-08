@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "beautify": "lint-staged",
+    "beautify": "prettier --single-quote --tab-width 4 --trailing-comma all --write src/**/*.{js,json,scss}",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resource/scss/ -o src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,9 +23,6 @@
     "url": "https://github.com/HgDcMinh12/nodejs_blog/issues"
   },
   "homepage": "https://github.com/HgDcMinh12/nodejs_blog#readme",
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
-  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2"
