@@ -19,8 +19,8 @@ const Course = new Schema(
     },
 );
 
-Course.plugin(mongooseDelete,{
-    deletedAt:true,
+Course.plugin(mongooseDelete, {
+    deletedAt: true,
     overrideMethods: 'all',
 });
 
